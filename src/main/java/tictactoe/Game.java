@@ -16,7 +16,7 @@ public class Game {
         status = GAME_ON;
     }
 
-    public Game(Status status, Board board, Player currentPlayer) {
+    private Game(Status status, Board board, Player currentPlayer) {
         this.status = status;
         this.board = board;
         this.currentPlayer = currentPlayer;
