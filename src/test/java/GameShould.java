@@ -79,4 +79,11 @@ public class GameShould {
         assertThat(game.state(), is(new GameState(O_HAS_WON, NOBODY)));
     }
 
+    @Test
+    void not_permit_play_after_game_is_over(){
+        Game game = play(BOTTOM_LEFT, MIDDLE, BOTTOM_RIGHT, BOTTOM_MIDDLE, CENTRE_LEFT, TOP_MIDDLE, TOP_LEFT);
+
+        assertThat(game.state(), is(new GameState(O_HAS_WON, NOBODY)));
+    }
+
 }

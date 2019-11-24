@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebc59f3d-b35d-4996-986d-659405833f4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/tictactoe/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tictactoe/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tictactoe/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tictactoe/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tictactoe/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tictactoe/Status.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,17 +23,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="323">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/GameShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
+            <state relative-caret-position="307">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,13 +41,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="342">
+              <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,10 +102,10 @@
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/Square.java" />
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/GameState.java" />
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/Status.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/tictactoe/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/Board.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/GameShould.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tictactoe/Game.java" />
       </list>
     </option>
   </component>
@@ -180,7 +182,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574613995992" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574614500347" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -207,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameShould">
+  <component name="RunManager" selected="JUnit.GameShould.not_permit_play_after_game_is_over">
     <configuration name="GameShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tictactoe-tdd" />
       <option name="PACKAGE_NAME" value="" />
@@ -216,11 +218,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameShould.not_allow_a_square_already_played" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameShould.not_permit_play_after_game_is_over" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tictactoe-tdd" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameShould" />
-      <option name="METHOD_NAME" value="not_allow_a_square_already_played" />
+      <option name="METHOD_NAME" value="not_permit_play_after_game_is_over" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -258,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameShould.not_permit_play_after_game_is_over" />
         <item itemvalue="JUnit.GameShould" />
         <item itemvalue="JUnit.GameShould.recognize_when_o_has_won" />
         <item itemvalue="JUnit.GameShould.recognize_when_x_has_won" />
         <item itemvalue="JUnit.GameShould.recognize_a_draw" />
-        <item itemvalue="JUnit.GameShould.not_allow_a_square_already_played" />
       </list>
     </recent_temporary>
   </component>
@@ -277,14 +279,11 @@
       <option name="presentableId" value="Default" />
       <updated>1574590911277</updated>
       <workItem from="1574590917151" duration="950000" />
-      <workItem from="1574592327610" duration="10029000" />
+      <workItem from="1574592327610" duration="10377000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameShould_recognize_when_x_has_won - 2019.11.24 at 17h 54m 25s.xml">
-      <configuration name="GameShould.recognize_when_x_has_won" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameShould - 2019.11.24 at 18h 02m 29s.xml">
       <configuration name="GameShould" configurationId="JUnit" />
     </history-entry>
@@ -312,9 +311,12 @@
     <history-entry file="GameShould - 2019.11.24 at 19h 45m 19s.xml">
       <configuration name="GameShould" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameShould_not_permit_play_after_game_is_over - 2019.11.24 at 19h 52m 54s.xml">
+      <configuration name="GameShould.not_permit_play_after_game_is_over" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10979000" />
+    <option name="totallyTimeSpent" value="11327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -396,15 +398,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="323">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="307">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -429,12 +431,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameShould.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="78" column="48" lean-forward="true" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
+        <state relative-caret-position="342">
+          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
           </folding>
         </state>
       </provider>
