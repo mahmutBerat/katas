@@ -1,7 +1,6 @@
 package tictactoe;
 
-import static tictactoe.Player.O;
-import static tictactoe.Player.X;
+import static tictactoe.Player.*;
 import static tictactoe.Status.*;
 
 public class Game {
@@ -17,13 +16,13 @@ public class Game {
     }
 
     private Game(Status status, Board board, Player currentPlayer) {
-        this.status = status;
         this.board = board;
         this.currentPlayer = currentPlayer;
+        this.status = board.isFull() ? DRAW : status;
     }
 
     public GameState state() {
-        return new GameState(status, nextPlayer());
+        return status == DRAW ? new GameState(status, NOBODY) : new GameState(status, nextPlayer());
     }
 
     private Player nextPlayer() {

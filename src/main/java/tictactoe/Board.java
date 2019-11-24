@@ -24,4 +24,8 @@ public class Board {
         squares.add(square);
         return new Board(squares);
     }
+
+    public boolean isFull() {
+        return this.takenSquares.size() == 9;
+    }
 }
