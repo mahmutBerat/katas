@@ -18,11 +18,18 @@ public class Game {
     private Game(Status status, Board board, Player currentPlayer) {
         this.board = board;
         this.currentPlayer = currentPlayer;
-        this.status = board.isFull() ? DRAW : status;
+        this.status = status;
+        this.status = setStatusByBoard(board);
+    }
+
+    private Status setStatusByBoard(Board board) {
+        if (board.isFull()) return DRAW;
+        if (board.hasWon()) return X_HAS_WON;
+        return status;
     }
 
     public GameState state() {
-        return status == DRAW ? new GameState(status, NOBODY) : new GameState(status, nextPlayer());
+        return status == DRAW || status == X_HAS_WON ? new GameState(status, NOBODY) : new GameState(status, nextPlayer());
     }
 
     private Player nextPlayer() {
