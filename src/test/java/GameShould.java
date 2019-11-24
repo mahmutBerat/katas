@@ -35,9 +35,10 @@ public class GameShould {
     public void not_allow_a_square_already_played(){
         Game game = new Game();
         game = game.play(TOP_LEFT);
+        game = game.play(MIDDLE);
         game = game.play(TOP_LEFT);
 
-        assertThat(game.state(), is(new GameState(SQUARE_ALREADY_PLAYED, O)));
+        assertThat(game.state(), is(new GameState(SQUARE_ALREADY_PLAYED, X)));
     }
 
 }
