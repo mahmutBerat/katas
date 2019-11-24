@@ -24,12 +24,13 @@ public class Game {
 
     private Status setStatusByBoard(Board board) {
         if (board.isFull()) return DRAW;
-        if (board.hasWon()) return X_HAS_WON;
+        if (board.hasWon(currentPlayer))
+            return currentPlayer == X ? X_HAS_WON : O_HAS_WON;
         return status;
     }
 
     public GameState state() {
-        return status == DRAW || status == X_HAS_WON ? new GameState(status, NOBODY) : new GameState(status, nextPlayer());
+        return status == DRAW || status == X_HAS_WON || status == O_HAS_WON ? new GameState(status, NOBODY) : new GameState(status, nextPlayer());
     }
 
     private Player nextPlayer() {
@@ -43,6 +44,6 @@ public class Game {
         if (board.alreadyTaken(square)) {
             return new Game(SQUARE_ALREADY_PLAYED, board, currentPlayer);
         }
-        return new Game(GAME_ON, board.take(square), nextPlayer());
+        return new Game(GAME_ON, board.take(square, nextPlayer()), nextPlayer());
     }
 }

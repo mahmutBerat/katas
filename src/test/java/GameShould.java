@@ -62,7 +62,7 @@ public class GameShould {
             "BOTTOM_LEFT, TOP_LEFT, BOTTOM_MIDDLE, CENTRE_LEFT, BOTTOM_RIGHT",
             "TOP_LEFT, MIDDLE, CENTRE_LEFT, BOTTOM_RIGHT, BOTTOM_LEFT",
             "TOP_MIDDLE, CENTRE_LEFT, MIDDLE, TOP_LEFT, BOTTOM_MIDDLE",
-            "TOP_RIGHT, MIDDLE, MIDDLE, BOTTOM_LEFT, BOTTOM_RIGHT",
+            "TOP_RIGHT, MIDDLE, CENTRE_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT",
             "BOTTOM_LEFT, TOP_LEFT, TOP_RIGHT, TOP_MIDDLE, MIDDLE",
             "MIDDLE, BOTTOM_MIDDLE, TOP_LEFT, BOTTOM_LEFT, BOTTOM_RIGHT"
     })
@@ -71,4 +71,12 @@ public class GameShould {
 
         assertThat(game.state(), is(new GameState(X_HAS_WON, NOBODY)));
     }
+
+    @Test
+    void recognize_when_o_has_won() {
+        Game game = play(BOTTOM_LEFT, MIDDLE, BOTTOM_RIGHT, BOTTOM_MIDDLE, CENTRE_LEFT, TOP_MIDDLE);
+
+        assertThat(game.state(), is(new GameState(O_HAS_WON, NOBODY)));
+    }
+
 }
