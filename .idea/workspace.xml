@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ebc59f3d-b35d-4996-986d-659405833f4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tictactoe/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tictactoe/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/GameShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="375">
+              <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Square.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            <state relative-caret-position="426">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#930#931#0" expanded="true" />
@@ -104,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/Status.java" />
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/Board.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/GameShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/tictactoe/Game.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameShould.java" />
       </list>
     </option>
   </component>
@@ -182,7 +189,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574614500347" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574615356577" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -209,7 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameShould.not_permit_play_after_game_is_over">
+  <component name="RunManager" selected="JUnit.GameShould">
     <configuration name="GameShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tictactoe-tdd" />
       <option name="PACKAGE_NAME" value="" />
@@ -223,16 +230,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameShould" />
       <option name="METHOD_NAME" value="not_permit_play_after_game_is_over" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameShould.recognize_a_draw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tictactoe-tdd" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameShould" />
-      <option name="METHOD_NAME" value="recognize_a_draw" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -258,13 +255,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameShould.recognize_win_when_in_last_move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tictactoe-tdd" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameShould" />
+      <option name="METHOD_NAME" value="recognize_win_when_in_last_move" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameShould.not_permit_play_after_game_is_over" />
         <item itemvalue="JUnit.GameShould" />
+        <item itemvalue="JUnit.GameShould.recognize_win_when_in_last_move" />
+        <item itemvalue="JUnit.GameShould.not_permit_play_after_game_is_over" />
         <item itemvalue="JUnit.GameShould.recognize_when_o_has_won" />
         <item itemvalue="JUnit.GameShould.recognize_when_x_has_won" />
-        <item itemvalue="JUnit.GameShould.recognize_a_draw" />
       </list>
     </recent_temporary>
   </component>
@@ -279,14 +286,11 @@
       <option name="presentableId" value="Default" />
       <updated>1574590911277</updated>
       <workItem from="1574590917151" duration="950000" />
-      <workItem from="1574592327610" duration="10377000" />
+      <workItem from="1574592327610" duration="11094000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameShould - 2019.11.24 at 18h 02m 29s.xml">
-      <configuration name="GameShould" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameShould - 2019.11.24 at 18h 03m 06s.xml">
       <configuration name="GameShould" configurationId="JUnit" />
     </history-entry>
@@ -314,9 +318,12 @@
     <history-entry file="GameShould_not_permit_play_after_game_is_over - 2019.11.24 at 19h 52m 54s.xml">
       <configuration name="GameShould.not_permit_play_after_game_is_over" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameShould_not_permit_play_after_game_is_over - 2019.11.24 at 19h 55m 03s.xml">
+      <configuration name="GameShould.not_permit_play_after_game_is_over" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11327000" />
+    <option name="totallyTimeSpent" value="12044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -332,13 +339,13 @@
       <window_info id="Favorites" order="7" sideWeight="0.5006196" side_tool="true" weight="0.24964234" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32961586" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32961586" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32961586" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32961586" />
@@ -365,13 +372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -403,16 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -433,12 +423,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        <state relative-caret-position="426">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#930#931#0" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tictactoe/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

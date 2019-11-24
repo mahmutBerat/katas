@@ -23,9 +23,9 @@ public class Game {
     }
 
     private Status setStatusByBoard(Board board) {
-        if (board.isFull()) return DRAW;
         if (board.hasWon(currentPlayer))
             return currentPlayer == X ? X_HAS_WON : O_HAS_WON;
+        if (board.isFull()) return DRAW;
         return status;
     }
 

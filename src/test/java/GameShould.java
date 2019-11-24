@@ -15,24 +15,24 @@ import static tictactoe.Status.*;
 
 
 @DisplayName("Game adjudicator should ")
-public class GameShould {
+class GameShould {
 
     @Test
-    public void wait_for_x_to_play_first() {
+    void wait_for_x_to_play_first() {
         Game game = new Game();
 
         assertThat(game.state(), is(new GameState(GAME_ON, X)));
     }
 
     @Test
-    public void alternate_the_players() {
+    void alternate_the_players() {
         Game game = play(TOP_LEFT, MIDDLE);
 
         assertThat(game.state(), is(new GameState(GAME_ON, X)));
     }
 
     @Test
-    public void not_allow_a_square_already_played() {
+    void not_allow_a_square_already_played() {
         Game game = play(TOP_LEFT, MIDDLE, TOP_LEFT);
 
         assertThat(game.state(), is(new GameState(SQUARE_ALREADY_PLAYED, X)));
@@ -47,7 +47,7 @@ public class GameShould {
     // o o x
     // x x o
     @Test
-    public void recognize_a_draw() {
+    void recognize_a_draw() {
         Game game = play(TOP_LEFT, TOP_MIDDLE, TOP_RIGHT,
                 CENTRE_LEFT, BOTTOM_LEFT, MIDDLE,
                 CENTRE_RIGHT, BOTTOM_RIGHT, BOTTOM_MIDDLE);
@@ -84,6 +84,13 @@ public class GameShould {
         Game game = play(BOTTOM_LEFT, MIDDLE, BOTTOM_RIGHT, BOTTOM_MIDDLE, CENTRE_LEFT, TOP_MIDDLE, TOP_LEFT);
 
         assertThat(game.state(), is(new GameState(O_HAS_WON, NOBODY)));
+    }
+
+    @Test
+    void recognize_win_when_in_last_move(){
+        Game game = play(TOP_LEFT,TOP_MIDDLE,TOP_RIGHT, CENTRE_LEFT, MIDDLE, BOTTOM_LEFT,CENTRE_RIGHT, BOTTOM_MIDDLE, BOTTOM_RIGHT);
+
+        assertThat(game.state(), is(new GameState(X_HAS_WON, NOBODY)));
     }
 
 }
