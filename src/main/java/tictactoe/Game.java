@@ -1,14 +1,32 @@
 package tictactoe;
 
+import static tictactoe.Player.O;
+import static tictactoe.Player.X;
+
 public class Game {
 
-    private GameState state;
+    private Player currentPlayer;
 
-    public GameState getState() {
-        return new GameState(Status.GAME_ON, Player.X);
+    public Game() {
+        currentPlayer = null;
     }
 
-    public void setState(GameState state) {
-        this.state = state;
+    private Game(Player nextPlayer) {
+        this.currentPlayer = nextPlayer;
+    }
+
+    public GameState state() {
+        return new GameState(Status.GAME_ON, nextPlayer());
+    }
+
+    private Player nextPlayer() {
+        if(currentPlayer == null){
+            return X;
+        }
+        return currentPlayer == X ? O : X;
+    }
+
+    public Game play() {
+        return new Game(nextPlayer());
     }
 }

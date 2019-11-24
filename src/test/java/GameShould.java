@@ -13,10 +13,19 @@ import static org.junit.Assert.assertThat;
 public class GameShould {
 
     @Test
-    public void wait_x_to_play_first() {
+    public void wait_for_x_to_play_first() {
         Game game = new Game();
 
-        assertThat(game.getState(), is(new GameState(Status.GAME_ON, Player.X)));
+        assertThat(game.state(), is(new GameState(Status.GAME_ON, Player.X)));
+    }
+
+    @Test
+    public void alternate_the_players(){
+        Game game = new Game();
+        game = game.play();
+        game = game.play();
+
+        assertThat(game.state(), is(new GameState(Status.GAME_ON, Player.X)));
     }
 
 }
